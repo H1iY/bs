@@ -17,7 +17,7 @@
 export default {
   data() {
     return {
-      color: ["#d3d3d3", "#bfa", "#FAF0E6"],
+      color: ["#d3d3d3", "#FFFAFA", "#FAF0E6"],
     };
   },
   created() {
@@ -70,11 +70,12 @@ export default {
     box-shadow: -4px -4px 12px rgb(255 255 255),
       4px 4px 12px rgb(121 130 160 / 75%);
     position: absolute;
-    right: 40px;
+    top: 5px;
+    left: 1436px;
   }
 }
 * {
-  $bc: #d3d3d3;
+  // $bc: #d3d3d3;
   margin: 0;
   padding: 0;
   // background-color: $bc;
