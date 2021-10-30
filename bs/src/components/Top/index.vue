@@ -2,15 +2,15 @@
   <div class="Top">
     <span id="tubiao">图标</span>
     <ul class="Top-li">
-      <a href="#"><li>1</li></a>
-      <a href="#"><li>2</li></a>
-      <a href="#"><li>3</li></a>
-      <a href="#"><li>4</li></a>
-      <a href="#"><li>5</li></a>
-      <a href="#"><li>6</li></a>
-      <a href="#"><li>7</li></a>
-      <a href="#"><li>8</li></a>
-      <a href="#"><li>9</li></a>
+      <a href="#"><li>首页</li></a>
+      <a href="#"><li>概况</li></a>
+      <a href="#"><li>服务</li></a>
+      <a href="#"><li>书籍</li></a>
+      <a href="#"><li>查询</li></a>
+      <a href="#"><li>通知</li></a>
+      <a href="#"><li>产权</li></a>
+      <a href="#"><li>教培</li></a>
+      <a href="#"><li>党建</li></a>
     </ul>
     <div class="Top-time">
       <i class="el-icon-goods"></i>
@@ -114,6 +114,10 @@ export default {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    a{
+      text-decoration: none;
+      color: #000;
+    }
     li {
       width: 40px;
       height: 40px;

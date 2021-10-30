@@ -19,8 +19,8 @@
               ref="one"
               @mouseover="xianshi($refs.one[index])"
               @mouseleave="yincang($refs.one[index])"
-              ><li>{{ item }}</li></a
-            >
+              ><li>{{ item }} <i class="el-icon-arrow-right"></i></li
+            ></a>
             <div v-if="index == 0" class="shigediv"><div-1></div-1></div>
             <div v-if="index == 1" class="shigediv"><div-2></div-2></div>
             <div v-if="index == 2" class="shigediv"><div-3></div-3></div>
@@ -44,21 +44,21 @@
 </template>
 
 <script>
-import Div1 from '../shiGeDiv/div1.vue';
-import Div2 from '../shiGeDiv/div2.vue';
-import Div3 from '../shiGeDiv/div3.vue';
-import Div4 from '../shiGeDiv/div4.vue';
-import Div5 from '../shiGeDiv/div5.vue';
-import Div6 from '../shiGeDiv/div6.vue';
-import Div7 from '../shiGeDiv/div7.vue';
-import Div8 from '../shiGeDiv/div8.vue';
-import Div9 from '../shiGeDiv/div9.vue';
-import Div10 from '../shiGeDiv/div10.vue';
+import Div1 from "../shiGeDiv/div1.vue";
+import Div2 from "../shiGeDiv/div2.vue";
+import Div3 from "../shiGeDiv/div3.vue";
+import Div4 from "../shiGeDiv/div4.vue";
+import Div5 from "../shiGeDiv/div5.vue";
+import Div6 from "../shiGeDiv/div6.vue";
+import Div7 from "../shiGeDiv/div7.vue";
+import Div8 from "../shiGeDiv/div8.vue";
+import Div9 from "../shiGeDiv/div9.vue";
+import Div10 from "../shiGeDiv/div10.vue";
 export default {
   data() {
     return {
       url: "../../assets/lubo/",
-      imgs: ["44.png", "55.jpg", "66.jpg", "77.jpg"],
+      imgs: [ "55.jpg","44.png", "66.jpg", "77.jpg"],
       list: [
         "选项一",
         "选项二",
@@ -81,7 +81,7 @@ export default {
       a.setAttribute("class", "");
     },
   },
-  components:{
+  components: {
     Div1,
     Div2,
     Div3,
@@ -92,7 +92,7 @@ export default {
     Div8,
     Div9,
     Div10,
-  }
+  },
 };
 </script>
 
@@ -133,7 +133,15 @@ export default {
     background-color: #d3d3d3;
     opacity: 0.5;
     border-radius: 10px 0 0 10px;
+    a{
+          text-decoration: none;
+          color: #000;
+      }
     li {
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       width: 234px;
       height: 42px;
       box-sizing: border-box;
